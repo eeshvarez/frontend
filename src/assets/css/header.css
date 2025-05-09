@@ -1,0 +1,29 @@
+
+#wlogo{
+    height: 80px;
+    margin-top: 0rem;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(239, 245, 255);
+}
+.usrprofile{
+    background-color: orange;
+    height: 40px;
+    width: 7%;
+}
+#lg_link{
+    text-decoration: none;
+    background-color: orange;
+    text-align: center;
+    height: 30px;
+    width: 7rem;
+    /* padding-top: 0.6rem; */
+    margin: 1rem;
+    align-content: center;
+    border-radius: 1rem;
+}
+#lg_link:hover{
+    background-color: rgb(218, 143, 3);
+}

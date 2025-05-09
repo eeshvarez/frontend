@@ -1,0 +1,171 @@
+#load{
+    color: blue;
+    text-align: center;
+}
+
+
+.table-bg {
+    /* background-color: rgb(173, 175, 175); */
+    margin: 20px auto;
+    width: 1100px;
+    height: 1200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+.editable{
+    /* background-color: rgb(173, 175, 175); */
+    margin: 20px auto;
+    width: 1100px;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+#mytable {
+    width: 100%;
+    /* position: sticky; */
+    border-collapse: collapse;
+    background-color: white;
+}
+#mytable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.warehouse-table tbody tr:hover {
+    background-color: #e0e0e0;
+    transition: 0.2s;
+}
+
+#mytable th,
+#mytable td {
+    width:500px;
+    border: 1px solid #ccc;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+}
+
+#mytable thead input {
+    width: 100%;
+    padding: 6px;
+    background-color: rgb(37, 32, 77);
+    border: none;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#mytable thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(245, 200, 155);
+}
+.btn_sec{
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+}
+.select-btn{
+    background-color: rgb(251, 171, 59);
+    border: none;
+    margin-top: 2rem;
+}
+.bulk-btn{
+    background-color: rgb(77, 50, 13);
+    border: none;
+    margin-top: 2rem;
+}
+.bts-sec2{
+    justify-self: center;
+    display: flex;
+    gap: 2rem;
+}
+#bts-s1{
+    background-color: rgb(57, 92, 58);
+}
+#filter_form{
+    background-color: red;
+    height: 20px;
+    overflow-y: scroll;
+}
+.filter {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 0;
+    /* flex-wrap: wrap; */
+  }
+  
+  .filter-select{
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #f60d0d !important;
+    border-radius: 8px;
+    font-size: 1rem;
+    min-width: 2px;
+  }
+  
+  .filter-input{
+    width: 20%;
+    border: 1px solid rgb(167, 177, 255) !important;
+  }
+  .add_sec{
+    margin-top: 2rem;
+    background-color: rgb(115, 120, 179);
+    color: white;
+    border-radius:0.4rem;
+    text-align: center;
+  }
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);         
+    -webkit-backdrop-filter: blur(5px);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  
+  .mid-body {
+    background-color: rgb(154, 153, 163);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    animation: popFadeIn 0.3s ease-out;
+  }
+
+
+
+
+
+
+
+  /* .filter-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-button:hover {
+    background-color: #0056b3;
+  } */
+  
