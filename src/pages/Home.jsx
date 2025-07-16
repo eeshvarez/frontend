@@ -4,6 +4,7 @@ import bannerimg from '../assets/imgs/bnimg.png'
 import { useState, useEffect } from "react";
 import wi from '../assets/imgs/waregent logo.png'
 import axios from 'axios';
+import warehouse from "./Warehouse";
 import { useNavigate } from "react-router-dom";
 
 function Home(){
@@ -94,7 +95,7 @@ function Home(){
                     uid:tc
                 }
             })
-            console.log(res.data);
+            console.log("res_data_table_check: ",res.data);
 
             if(res.data['status']=="table_checked"){
                 navigate('/warehouse')
