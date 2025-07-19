@@ -28,7 +28,7 @@ function Warehouse(){
         const get_table = async () =>{
             if(getuser){
                 let splited=getuser.split(" ")[0]
-                const table= await axios.get('http://127.0.0.1:8000/get_table', {
+                const table= await axios.get('https://backend-anrv.onrender.com/get_table', {
                     params:{
                         uid: splited
                     }
@@ -85,7 +85,7 @@ function Warehouse(){
         
         if(getuser){
             let splited_uid=getuser.split(" ")[0]
-            const res=await axios.post('http://127.0.0.1:8000/selectedrows',{
+            const res=await axios.post('https://backend-anrv.onrender.com/selectedrows',{
                 
                     'uid'      : splited_uid,
                     'rowsdata' : list
@@ -122,7 +122,7 @@ function Warehouse(){
     const handlesendeditedrows= async()=>{
         if(getuser){
             let splited_uid=getuser.split(" ")[0]
-            const res= await axios.post('http://127.0.0.1:8000/editrows',{
+            const res= await axios.post('https://backend-anrv.onrender.com/editrows',{
                 'uid': splited_uid,
                 'rowsdata' : edit_table
             })
@@ -171,7 +171,7 @@ function Warehouse(){
     const handle_new_sbmit=async(e)=>{
         e.preventDefault()
         let splited_uid=getuser.split(" ")[0]
-        const res = await axios.post("http://127.0.0.1:8000/addrow",{
+        const res = await axios.post("https://backend-anrv.onrender.com/addrow",{
             'uid':splited_uid,
             "new_data":new_row
         })
@@ -213,7 +213,7 @@ function Warehouse(){
         // console.log(formdata.entries)
 
         try{
-            const response = await axios.post('http://127.0.0.1:8000/addnewfile' , formdata , {
+            const response = await axios.post('https://backend-anrv.onrender.com/addnewfile' , formdata , {
                 headers:{
                     'content-type' : 'multipart/form-data'
                 }

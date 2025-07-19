@@ -17,7 +17,7 @@ function App() {
 
       // const auto_login = async () => {
       //   try {
-      //     const resp = await axios.get("http://127.0.0.1:8000/autolog", {
+      //     const resp = await axios.get("https://backend-anrv.onrender.com/autolog", {
       //       params: { uid: uid },
       //     });
       //     console.log("Auto login response:", resp.data);

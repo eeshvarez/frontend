@@ -28,7 +28,7 @@ function Login (){
             'password':password
         }
         try{
-            const res= await axios.post('http://127.0.0.1:8000/login', objj)
+            const res= await axios.post('https://backend-anrv.onrender.com/login', objj)
             console.log('res',res.data)
             if (res.data['status']=='true'){
                 localStorage.setItem('uid',username+' '+password)

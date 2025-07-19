@@ -18,7 +18,7 @@ function Home(){
 
         const connect_to_backend = async ()=>{
             try{
-                const response = await axios.get('http://127.0.0.1:8000/') 
+                const response = await axios.get('https://backend-anrv.onrender.com/') 
                 if (response){
                     console.log('connected')
                 }
@@ -44,7 +44,7 @@ function Home(){
     }
     console.log('islooged: ',islooged)
     const handleTable= async ( )=>{
-        const table = await axios.post('http://127.0.0.1:8000/create_table')
+        const table = await axios.post('https://backend-anrv.onrender.com/create_table')
         {
             table && console.log('table created')
         }
@@ -66,7 +66,7 @@ function Home(){
         // console.log(formdata.entries)
 
         try{
-            const response = await axios.post('http://127.0.0.1:8000/getfiles' , formdata , {
+            const response = await axios.post('https://backend-anrv.onrender.com/getfiles' , formdata , {
                 headers:{
                     'content-type' : 'multipart/form-data'
                 }
@@ -90,7 +90,7 @@ function Home(){
           console.log('status:', true);
           const senduser = async ()=>{
             const tc=getuser.split(' ')[0]
-            const res = await axios.get('http://127.0.0.1:8000/table_check' , {
+            const res = await axios.get('https://backend-anrv.onrender.com/table_check' , {
                 params:{
                     uid:tc
                 }
